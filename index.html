@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Шаурма на углях — Новосибирск</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<style>*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--ff);background:var(--bg);color:var(--fg);line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+section{padding:96px 0}
+.tag{color:var(--acc);font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase}
+h2{font-family:var(--fd);font-size:clamp(32px,4.4vw,54px);font-weight:var(--hw,600);line-height:1.08;margin:12px 0 14px;letter-spacing:var(--hls,-.02em)}
+.sub{color:var(--mut);max-width:600px;margin-bottom:44px;font-size:17px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--r,20px);padding:28px;transition:.3s}
+.card:hover{transform:translateY(-5px);border-color:var(--acc)}
+.card h3{font-family:var(--fd);font-size:21px;font-weight:600;margin-bottom:8px}
+.card p{color:var(--mut);font-size:15px}
+.stars{color:var(--acc);letter-spacing:3px;margin-bottom:12px}
+.who{margin-top:16px;font-size:13px;color:var(--mut)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 30px;border-radius:var(--br,99px);font-weight:600;font-size:15px;cursor:pointer;border:0;background:var(--acc);color:var(--onacc,#000);transition:.25s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.1)}
+.btn.ghost{background:transparent;color:var(--fg);border:1px solid var(--line)}
+.btn.ghost:hover{border-color:var(--acc)}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:12px}
+.gal img{width:100%;height:100%;object-fit:cover;border-radius:var(--r,16px);transition:.4s}
+.gal img:hover{transform:scale(1.02)}
+.gal .w2{grid-column:span 2}
+.tbl{background:var(--card);border:1px solid var(--line);border-radius:var(--r,20px);overflow:hidden}
+.tr{display:grid;grid-template-columns:2fr 1fr 1fr;padding:20px 28px;border-bottom:1px solid var(--line);align-items:center;color:var(--mut)}
+.tr:last-child{border:0}.tr b{color:var(--fg);font-size:18px;font-weight:600}.tr .pr{color:var(--acc);font-weight:700;font-size:20px}
+.tr.h{font-size:12px;letter-spacing:.15em;text-transform:uppercase;background:rgba(127,127,127,.08)}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.fact{padding:26px 22px;border:1px solid var(--line);border-radius:var(--r,18px);background:var(--card)}
+.fact b{display:block;font-family:var(--fd);font-size:42px;font-weight:600;color:var(--acc);line-height:1.1}.fact span{color:var(--mut);font-size:14px}
+.cont{display:grid;grid-template-columns:.85fr 1.15fr;gap:34px}
+.cl div{padding:18px 0;border-bottom:1px solid var(--line)}
+.cl small{display:block;color:var(--mut);font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+.cl b{font-size:19px;font-weight:500}
+.map{border-radius:var(--r,20px);overflow:hidden;border:1px solid var(--line);min-height:380px}
+.map iframe{width:100%;height:100%;min-height:380px;border:0}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--mut);font-size:14px}
+.fl{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.rise{opacity:0;animation:rise .9s cubic-bezier(.22,1,.36,1) forwards}
+@keyframes rise{from{opacity:0;transform:translateY(24px);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
+@media(max-width:900px){.grid3,.grid4,.cont,.facts{grid-template-columns:1fr 1fr}.cont{grid-template-columns:1fr}.grid3{grid-template-columns:1fr}.gal{grid-template-columns:1fr 1fr}section{padding:64px 0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important;transform:none!important}}
+:root{--bg:#0c0a09;--fg:#fff4e6;--mut:#a8998a;--acc:#ff5a1f;--onacc:#fff;--card:#171210;--line:#2b1f1a;--ff:Inter,system-ui,sans-serif;--fd:Oswald,Impact,sans-serif;--hw:700;--hls:.01em;--r:14px;--br:6px}
+h2{text-transform:uppercase}
+header{position:fixed;top:0;left:0;right:0;z-index:50;padding:20px 0;background:linear-gradient(#0c0a09cc,transparent)}
+.nav{display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:var(--fd);font-size:26px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}.logo i{color:var(--acc);font-style:normal}
+nav ul{display:flex;gap:28px;list-style:none;font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.1em}nav a:hover{color:var(--acc)}
+.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;overflow:hidden;background:#000}
+.hero .bgi{position:absolute;inset:0;background:url(https://avatars.mds.yandex.net/get-altay/19541413/2a0000019b26669ee608b9de2f1759121eb4/XXXL) center/cover;filter:brightness(.55) contrast(1.1);animation:kb 3s cubic-bezier(.22,1,.36,1) forwards;transform:scale(1.1)}
+@keyframes kb{to{transform:scale(1)}}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#0c0a09 0%,transparent 55%),linear-gradient(90deg,rgba(12,10,9,.85),transparent 65%)}
+.hc{position:relative;z-index:3;padding-bottom:110px}
+.hc .eb{display:inline-block;background:var(--acc);color:#fff;font-weight:700;font-size:13px;letter-spacing:.14em;padding:6px 14px;text-transform:uppercase;transform:rotate(-2deg)}
+.hc h1{font-family:var(--fd);font-size:clamp(60px,12vw,190px);line-height:.88;font-weight:700;text-transform:uppercase;letter-spacing:-.01em;margin:20px 0}.hc h1 span{color:var(--acc)}
+.hc p{max-width:520px;font-size:19px;color:#e8d9c8;margin-bottom:30px}
+.fire{position:absolute;left:0;right:0;bottom:0;height:140px;z-index:2;background:radial-gradient(ellipse at 50% 120%,rgba(255,90,31,.55),transparent 70%);animation:glow 3s ease-in-out infinite}
+@keyframes glow{50%{opacity:.55}}
+.mq{background:var(--acc);overflow:hidden;white-space:nowrap;padding:14px 0;font-family:var(--fd);font-size:22px;text-transform:uppercase;letter-spacing:.06em;font-weight:600;transform:rotate(-1deg);margin:-14px -10px 0}
+.mq div{display:inline-block;animation:mq 22s linear infinite}@keyframes mq{to{transform:translateX(-50%)}}
+.how{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.how .card{border-radius:6px}.how .card b{font-family:var(--fd);font-size:64px;color:var(--acc);line-height:1;display:block}
+.btn{text-transform:uppercase;letter-spacing:.08em}
+.fact b{font-family:var(--fd)}
+@media(max-width:900px){nav ul{display:none}.how{grid-template-columns:1fr 1fr}}
+</style></head><body><header><div class="wrap nav"><a href="#" class="logo">Шаурма <i>на углях</i></a><nav><ul><li><a href="#how">Как мы готовим</a></li><li><a href="#photos">Фото</a></li><li><a href="#reviews">Отзывы</a></li><li><a href="#contacts">Контакты</a></li></ul></nav></div></header>
+<div class="hero"><div class="bgi"></div><div class="fire"></div><div class="wrap hc"><span class="eb rise">Быстрое питание · Новосибирск</span><h1 class="rise" style="animation-delay:.15s">Шаурма<br><span>на углях</span></h1><p class="rise" style="animation-delay:.3s">Мясо, приготовленное на углях, сочные овощи и лаваш с ароматом дымка. Повар готовит при вас на открытой кухне.</p><a class="btn rise" style="animation-delay:.45s" href="tel:+79930010086">Позвонить и заказать</a></div></div>
+<div class="mq"><div>Шаурма на углях · Сырная шаурма · Готовим при вас · Открытая кухня · Шаурма на углях · Сырная шаурма · Готовим при вас · Открытая кухня · Шаурма на углях · Сырная шаурма · Готовим при вас · Открытая кухня · Шаурма на углях · Сырная шаурма · Готовим при вас · Открытая кухня · Шаурма на углях · Сырная шаурма · Готовим при вас · Открытая кухня · Шаурма на углях · Сырная шаурма · Готовим при вас · Открытая кухня · </div></div>
+<section id="how"><div class="wrap"><div class="tag">Как мы готовим</div><h2>Четыре причины <span style="color:var(--acc)">зайти</span></h2><p class="sub">Рейтинг 5,0 по 2266 оценкам на Яндекс Картах.</p>
+<div class="how"><div class="card"><b>01</b><h3>На углях</h3><p>Мясо готовится на углях — отсюда фирменный дымный вкус.</p></div><div class="card"><b>02</b><h3>Открытая кухня</h3><p>Повар готовит при вас, гости пишут, что ждать приходится всего несколько минут.</p></div><div class="card"><b>03</b><h3>Большие порции</h3><p>Гости пишут, что порция получается очень большой.</p></div><div class="card"><b>04</b><h3>Сырная шаурма</h3><p>Фирменная сырная — любимая у гостей.</p></div></div>
+<div class="facts" style="margin-top:22px"><div class="fact"><b>5,0</b><span>рейтинг, 2266 оценок</span></div><div class="fact"><b>94%</b><span>хвалят шаверму (597 отзывов)</span></div><div class="fact"><b>97%</b><span>отмечают чистоту</span></div><div class="fact"><b>927</b><span>отзывов на Яндекс Картах</span></div></div></div></section>
+<section id="photos" style="padding-top:0"><div class="wrap"><div class="tag">Фото</div><h2>Как это <span style="color:var(--acc)">выглядит</span></h2><p class="sub">Реальные фото заведения.</p><div class="gal"><img src="https://avatars.mds.yandex.net/get-altay/14586367/2a0000019b05334f86f5a967b247b906cc76/XXL" alt="Шаурма на углях" loading="lazy" class="w2"><img src="https://avatars.mds.yandex.net/get-altay/14296560/2a000001951f2f0cbfa08f3678e61a3e677c/XXL" alt="Шаурма на углях" loading="lazy"><img src="https://avatars.mds.yandex.net/get-altay/17043127/2a0000019b26668656338215b124555be03d/XXL" alt="Шаурма на углях" loading="lazy"><img src="https://avatars.mds.yandex.net/get-altay/18111128/2a0000019c9ed0d54d265edc15b37db7f857/XXL" alt="Шаурма на углях" loading="lazy"><img src="https://avatars.mds.yandex.net/get-altay/18748727/2a0000019c9ed0afd5b23888e5b62fa3c190/XXL" alt="Шаурма на углях" loading="lazy"><img src="https://avatars.mds.yandex.net/get-altay/19876101/2a0000019c9ed08d919cc3c00f03416f528c/XXL" alt="Шаурма на углях" loading="lazy" class="w2"><img src="https://avatars.mds.yandex.net/get-altay/5485499/2a0000017cb28b524b48d23c33230dca7f70/XXL" alt="Шаурма на углях" loading="lazy"><img src="https://avatars.mds.yandex.net/get-altay/13294935/2a000001934e59a00bc7481edc4757877f25/XXL" alt="Шаурма на углях" loading="lazy"><img src="https://avatars.mds.yandex.net/get-altay/4447467/2a0000017aeb488257fdce80696730bd2446/XXL" alt="Шаурма на углях" loading="lazy"></div></div></section>
+<section id="reviews" style="padding-top:0"><div class="wrap"><div class="tag">Отзывы</div><h2>Гости <span style="color:var(--acc)">пишут</span></h2><p class="sub">Живые отзывы с Яндекс Карт.</p>
+<div class="grid3"><div class="card"><div class="stars">★★★★★</div><p>«Ждала заказ буквально пять минут, повар всё делал при мне на открытой кухне. Порция очень большая.»</p><div class="who">Диана Гочияева, Яндекс Карты</div></div><div class="card"><div class="stars">★★★★★</div><p>«Это не просто фаст-фуд, это целое блюдо ресторанного уровня!»</p><div class="who">Андрей Ямов, Яндекс Карты</div></div><div class="card"><div class="stars">★★★★★</div><p>«Ребята следят за чистотой и постоянно улучшают интерьер.»</p><div class="who">Андрей Ямов, Яндекс Карты</div></div></div></div></section>
+<section id="contacts" style="padding-top:0"><div class="wrap"><div class="tag">Контакты</div><h2>Где <span style="color:var(--acc)">нас найти</span></h2><p class="sub">Можно поесть внутри или взять с собой.</p><div class="cont"><div class="cl">
+<div><small>Адрес</small><b>ул. Дуси Ковальчук, 398А, Новосибирск</b></div><div><small>Телефон</small><b><a href="tel:+79930010086">+7 (993) 001-00-86</a></b></div>
+<div style="border:0"><a class="btn" target="_blank" rel="noopener" href="https://yandex.ru/maps/org/shaurma_na_uglyakh/104368547690/">Построить маршрут</a></div></div><div class="map"><iframe src="https://yandex.ru/map-widget/v1/?ol=biz&oid=104368547690&z=17" loading="lazy" title="Карта" style="filter:invert(.92) hue-rotate(180deg) saturate(.8)"></iframe></div></div></div></section>
+<footer><div class="wrap fl"><span>© 2026 Шаурма на углях</span><span>Новосибирск · ул. Дуси Ковальчук, 398А</span></div></footer></body></html>
